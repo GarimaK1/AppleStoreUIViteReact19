@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Controls from './components/Controls';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
   const [isFrameZoom, setFrameZoom] = useState(false);
@@ -22,6 +23,9 @@ function App() {
         } w-[70vw] h-[85vh] max-w-[90vw] max-h-[90vh] border border-gray-300 rounded-2xl resize overflow-auto relative transition-all duration-100 flex`}>
           <Navbar currentPage={currentPage} handleNavClick={handleNavClick}/>
           <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} />
+          <div className=''>
+            <Home />
+          </div>
         </div>
       </div>
     </>
