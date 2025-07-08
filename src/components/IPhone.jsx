@@ -5,7 +5,7 @@ const IPhone = () => {
   return (
     <div className='w-full h-full flex flex-col items-center justify-around bg-white p-8'>
         <h3 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-800 mb-8'>
-            Which iPhone is right for you?
+            Choose from the latest iPhone models..
         </h3>
         <div className='flex justify-between w-full'>
             {
