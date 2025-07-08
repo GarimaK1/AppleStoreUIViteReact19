@@ -4,9 +4,9 @@ import { iphoneModels } from '../data/index';
 const IPhone = () => {
   return (
     <div className='w-full h-full flex flex-col items-center justify-around bg-white p-8'>
-        <h3 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-800 mb-8'>
+        <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-800 mb-8'>
             Choose your new iPhone.
-        </h3>
+        </h1>
         <div className='flex justify-between w-full'>
             {
                 iphoneModels.map((phone, index) => (
