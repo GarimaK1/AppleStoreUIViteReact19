@@ -23,7 +23,7 @@ function App() {
         } w-[70vw] h-[85vh] max-w-[90vw] max-h-[90vh] border border-gray-300 rounded-2xl resize overflow-auto relative transition-all duration-100 flex`}>
           <Navbar currentPage={currentPage} handleNavClick={handleNavClick}/>
           <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} />
-          <div className=''>
+          <div className='flex-grow'>
             <Home />
           </div>
         </div>
