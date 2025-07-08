@@ -10,7 +10,7 @@ const Navbar = ({ currentPage, handleNavClick }) => {
       <div className='flex flex-col flex-grow'>
         {
           navItems.map((item, index) => (
-            <a key={item.index} href='#' className='xl:w-36 lg:w-32 w-30 flex items-center justify-between my-3.5 text-left cursor-pointer'
+            <a key={index} href='#' className='xl:w-36 lg:w-32 w-30 flex items-center justify-between my-3.5 text-left cursor-pointer'
               onClick={() => handleNavClick(index)}>
               <i className={`${item.icon} text-xl text-violet-500`}></i>
               <span className='text-sm text-slate-500 mx-2.5 mr-auto tracking-wider'>{item.label}</span>
@@ -21,16 +21,16 @@ const Navbar = ({ currentPage, handleNavClick }) => {
       </div>
       <div className='flex justify-between pb-2'>
         <a href='#'>
-          <i class='bx bxl-instagram-alt text-2xl text-indigo-700'></i>
+          <i className='bx bxl-instagram-alt text-2xl text-indigo-700'></i>
         </a>
         <a href='#'>
-          <i class='bx bxl-facebook text-2xl text-indigo-700'></i>
+          <i className='bx bxl-facebook text-2xl text-indigo-700'></i>
         </a>
         <a href='#'>
-          <i class='bx bxl-twitter text-2xl text-indigo-700'></i>
+          <i className='bx bxl-twitter text-2xl text-indigo-700'></i>
         </a>
         <a href='#'>
-          <i class='bx bxl-youtube text-2xl text-indigo-700'></i>
+          <i className='bx bxl-youtube text-2xl text-indigo-700'></i>
         </a>
       </div>
     </div>
