@@ -8,22 +8,18 @@ const Macbook = () => {
                 Choose your new macBook.
             </h1>
             <div className='flex'>
-                <button className='2xl:w-36 md:w-26 w-28 2xl:h-18 md:h-12 flex flex-col justify-evenly items-center border rounded-l-xl'>
-                    <span className='2xl:text-lg xl:text-sm text-xs font-bold text-slate-800'>
-                        With M2 chip
-                    </span>
-                    <span className='2xl:text-base xl:text-sm text-xs text-slate-600'>
-                        From $999
-                    </span>
-                </button>
-                <button className='2xl:w-36 md:w-26 w-28 2xl:h-18 md:h-12 flex flex-col justify-evenly items-center border rounded-r-xl'>
-                    <span className='2xl:text-lg xl:text-sm text-xs font-bold text-slate-800'>
-                        With M3 chip
-                    </span>
-                    <span className='2xl:text-base xl:text-sm text-xs text-slate-600'>
-                        From $1,299
-                    </span>
-                </button>
+                {
+                    macbookModels.map((macbook, index) => (
+                        <button key={macbook.chip} className={`border ${index === 0 ? 'rounded-l-xl' : 'rounded-r-xl'} 2xl:w-36 md:w-26 w-28 2xl:h-18 md:h-12 flex flex-col justify-evenly items-center`}>
+                            <span className='2xl:text-lg xl:text-sm text-xs font-bold text-slate-800'>
+                                With {macbook.chip} chip
+                            </span>
+                            <span className='2xl:text-base xl:text-sm text-xs text-slate-600'>
+                                {macbook.price}
+                            </span>
+                        </button>
+                    ))
+                }
             </div>
         </div>
     )
