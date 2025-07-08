@@ -3,14 +3,14 @@ import { navItems } from '../data/index';
 
 const Navbar = ({ currentPage, handleNavClick }) => {
   return (
-    <div className='2xl:w-80 xl:w-52 w-44 h-full bg-slate-50 flex flex-col justify-between pt-5 px-3 pb-14 md:pb-0'>
+    <div className='2xl:w-80 xl:w-52 w-44 h-full bg-slate-50 flex flex-col justify-between py-5 px-3 md:pb-0'>
       <a href='#' className='2xl:text-2xl xl:text-xl text-indigo-700 font-medium mb-14'>
         Mock Apple Store
       </a>
       <div className='flex flex-col flex-grow'>
         {
           navItems.map((item, index) => (
-            <a key={index} href='#' className='xl:w-36 lg:w-32 w-30 flex items-center justify-between my-3.5 text-left cursor-pointer'
+            <a key={item.label} href='#' className='xl:w-36 lg:w-32 w-30 flex items-center justify-between my-3.5 text-left cursor-pointer'
               onClick={() => handleNavClick(index)}>
               <i className={`${item.icon} text-xl text-violet-500`}></i>
               <span className='text-sm text-slate-500 mx-2.5 mr-auto tracking-wider'>{item.label}</span>
@@ -19,7 +19,7 @@ const Navbar = ({ currentPage, handleNavClick }) => {
           ))
         }
       </div>
-      <div className='flex justify-between pb-2'>
+      <div className='flex justify-between pb-5'>
         <a href='#'>
           <i className='bx bxl-instagram-alt text-2xl text-indigo-700'></i>
         </a>
