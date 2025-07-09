@@ -9,23 +9,15 @@ const Watch = () => {
             </h1>
             <div className='w-full flex justify-around'>
                 <div className='w-60 h-[450px] flex flex-col justify-around'>
-                    {
-                        watchModels.map((watch, index) => (
-                            <div className='w-full h-64 mb-4 overflow-hidden relative group'>
-                                <p>{watch.imgs[0]}</p>
-                                {
-                                    watch?.imgs.map((img, ind) => (
-                                        <img src={`${img[ind]}`} alt={watch.name}
-                                            className={`absolute w-full h-full object-contain 
-                                            ${ind === 0 ? 'opacity-100 group-hover:opacity-0' : 'opacity-0 group-hover:opacity-100'} 
-                                            transition duration-300`}
-                                        />
-                                    ))
-                                }
-                            </div>
-                        ))
-                    }
+                    <div className='w-full h-64 mb-4 overflow-hidden relative group'>
+                        <img src="images/watch10-side.png" alt="watch"
+                            className='absolute w-full h-full object-contain 
+                                opacity-100 group-hover:opacity-0 transition duration-300' />
 
+                        <img src="images/watch10.png" alt="watch icon"
+                            className='absolute w-full h-full object-contain
+                                opacity-0 group-hover:opacity-100 transition duration-300' />
+                    </div>
                     <h3 className='2xl:text-xl xl:text-lg text-sm font-semibold'>
                         Apple Watch Series 10
                     </h3>
