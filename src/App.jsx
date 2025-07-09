@@ -6,6 +6,7 @@ import IPhone from './components/IPhone';
 import Macbook from './components/Macbook';
 import Watch from './components/Watch';
 import IMac from './components/IMac';
+import PageTransitions from './components/PageTransitions';
 
 function App() {
   const [isFrameZoom, setFrameZoom] = useState(false);
@@ -28,11 +29,13 @@ function App() {
           <Navbar currentPage={currentPage} handleNavClick={handleNavClick} />
           <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} />
           <div className='flex-grow'>
-            {/* <Home /> */}
-            {/* <IPhone /> */}
-            {/* <Macbook /> */}
-            {/* <Watch /> */}
-            <IMac />
+            <PageTransitions >
+              <Home />
+              <IPhone />
+              <Macbook />
+              <Watch />
+              <IMac />
+            </PageTransitions>
           </div>
         </div>
       </div>
