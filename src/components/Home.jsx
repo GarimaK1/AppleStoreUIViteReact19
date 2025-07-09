@@ -7,7 +7,7 @@ const Home = () => {
             {
                 items.map((item) => (
                     <div key={item.label} className='flex flex-col flex-grow items-center justify-center bg-white'>
-                        <span className='text-xl font-bold text-[#bc3c78] tracking-wide mb-1'>
+                        <span className='text-xl font-bold text-slate-500 tracking-wide mb-1'>
                             {item.label}
                         </span>
                         <img src={item.img} className='w-2/3 h-2/3 object-contain' alt={item.label} draggable='false' />
