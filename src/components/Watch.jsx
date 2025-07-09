@@ -12,13 +12,21 @@ const Watch = () => {
                     watchModels.map((watch, index) => (
                         <div key={watch.name} className='w-60 h-[450px] flex flex-col justify-around'>
                             <div className='w-full h-64 mb-4 overflow-hidden relative group'>
-                                <img src="images/watch10-side.png" alt="watch"
+                                {
+                                    watch.imgs.map((img, ind) => (
+                                        <img key={img} src={img} alt={watch.name}
+                                            className={`absolute w-full h-full object-contain 
+                                                ${ind === 0 ? 'opacity-100 group-hover:opacity-0' : 'opacity-0 group-hover:opacity-100'} 
+                                                transition duration-300`} />
+                                    ))
+                                }
+                                {/* <img src="images/watch10-side.png" alt="watch"
                                     className='absolute w-full h-full object-contain 
                                 opacity-100 group-hover:opacity-0 transition duration-300' />
 
                                 <img src="images/watch10.png" alt="watch icon"
                                     className='absolute w-full h-full object-contain
-                                opacity-0 group-hover:opacity-100 transition duration-300' />
+                                opacity-0 group-hover:opacity-100 transition duration-300' /> */}
                             </div>
                             <h3 className='2xl:text-xl xl:text-lg text-sm font-semibold'>
                                 {watch.name}
@@ -29,13 +37,13 @@ const Watch = () => {
                             <div className='md:text-sm text-xs text-slate-700 my-2'>
                                 {
                                     watch.desc.map((spec, index) => (
-                                        <p key={index} className=''>
+                                        <p key={spec} className=''>
                                             {spec}
                                         </p>
                                     ))
                                 }
                             </div>
-                            <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit'>
+                            <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit cursor-pointer'>
                                 Buy Now
                             </button>
                         </div>
