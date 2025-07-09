@@ -1,7 +1,7 @@
 import React from 'react';
 import { navItems } from '../data/index';
 
-const Navbar = ({ currentPage, handleNavClick }) => {
+const Navbar = ({ activePage, handleNavClick }) => {
   return (
     <div className='2xl:w-80 xl:w-52 w-44 h-full bg-slate-50 flex flex-col justify-between py-5 px-3 md:pb-0'>
       <a href='#' className='2xl:text-2xl xl:text-xl text-indigo-700 font-medium mb-14'>
@@ -14,7 +14,7 @@ const Navbar = ({ currentPage, handleNavClick }) => {
               onClick={() => handleNavClick(index)}>
               <i className={`${item.icon} text-xl text-violet-500`}></i>
               <span className='text-sm text-slate-500 mx-2.5 mr-auto tracking-wider'>{item.label}</span>
-              <i className={`${currentPage === index ? item.activeIcon : item.inactiveIcon} text-lg text-yellow-400`}></i>
+              <i className={`${activePage === index ? item.activeIcon : item.inactiveIcon} text-lg text-yellow-400`}></i>
             </a>
           ))
         }
