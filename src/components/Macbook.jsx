@@ -36,20 +36,20 @@ const Macbook = () => {
             <div className="">
                 <div className="w-80 2xl:mb-0 mb-8 flex flex-col 2xl:p-4 md:items-start items-center">
                     <img src={`${currentColor.img}`} alt={`Macbook Air with chip ${currentChipType.chip}`}
-                        className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:mt-6 object-contain m-auto" />
+                        className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:mt-6 object-contain m-auto"
+                    />
                     <span className="2xl:text-lg xl:text-sm font-medium text-slate-700 mb-2 text-center md:text-left">
                         {currentColor.label}
                     </span>
                     <div className='flex space-x-2 mb-4 md:text-left justify-center md:justify-start'>
-                        <button className='2xl:w-6 sm:w-5 w-4 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-violet-500'>
-
-                        </button>
-                        <button className='2xl:w-6 sm:w-5 w-4 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-violet-500'>
-
-                        </button>
-                        <button className='2xl:w-6 sm:w-5 w-4 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-violet-500'>
-
-                        </button>
+                        {
+                            currentChipType?.colors.map((colorData, index) => (
+                                <button key={colorData.label} style={{ backgroundColor: colorData.bg }} 
+                                        className={`2xl:w-6 sm:w-5 w-4 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full cursor-pointer
+                                        ${ selectedColor === index ? 'border-violet-500' : 'border-transparent' } border-2 hover:border-violet-500 `}>
+                                </button>
+                            ))
+                        }
                     </div>
                     <img src='images/apple-m2-icon.png' alt='Apple M2 Icon' className="w-12 h-12 2xl:mb-4 xl:mb-2 m-1" />
                     <div className='2xl:mb-4 xl:mb-2 text-center md:text-left'>
@@ -66,7 +66,7 @@ const Macbook = () => {
                             8-core CPU
                         </p>
                     </div>
-                    <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit '>
+                    <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit'>
                         Buy Now
                     </button>
                 </div>

@@ -13,17 +13,17 @@ function App() {
     setFrameZoom(!isFrameZoom);
   }
 
-  const handleNavClick= (pageIndex) => {
+  const handleNavClick = (pageIndex) => {
     setCurrentPage(pageIndex);
   }
 
   return (
     <>
       <div className='w-full h-screen grid place-items-center'>
-        <div className={`${
-          isFrameZoom ? 'min-w-[97vw] min-h-[97vh]' : 'min-w-[70vw] min-h-[85vh]'
-        } w-[70vw] h-[85vh] max-w-[97vw] max-h-[97vh] border border-gray-300 rounded-2xl resize overflow-auto relative transition-all duration-100 flex`}>
-          <Navbar currentPage={currentPage} handleNavClick={handleNavClick}/>
+        <div className={`${isFrameZoom ? 'min-w-[97vw] min-h-[97vh]' : 'min-w-[70vw] min-h-[85vh]'} 
+                      w-[70vw] h-[85vh] max-w-[97vw] max-h-[97vh] border border-gray-300 rounded-2xl 
+                      resize overflow-auto relative transition-all duration-100 flex`}>
+          <Navbar currentPage={currentPage} handleNavClick={handleNavClick} />
           <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} />
           <div className='flex-grow'>
             {/* <Home /> */}
