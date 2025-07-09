@@ -2,7 +2,7 @@ import React from 'react';
 import { imacModels } from '../data/index';
 
 const IMac = () => {
-    const [selectedColor, setSelectedColor] = React.useState('yellow');
+    const [selectedColor, setSelectedColor] = React.useState('green');
     const [visibleLabel, setVisibleLabel] = React.useState('Green');
 
     const getSelectedColorModel = () => {
@@ -39,7 +39,10 @@ const IMac = () => {
                                         setVisibleLabel(model.label);
                                     }}
                             />
-                            <span className='text-sm'>{model.label}</span>
+                            {
+                                // Show the label only if that color is selected
+                                visibleLabel === model.label && <span className='text-sm'>{model.label}</span>
+                            }
                         </div>
                     ))
                 }
