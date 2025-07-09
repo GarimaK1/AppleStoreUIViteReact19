@@ -33,8 +33,8 @@ const Macbook = () => {
                     ))
                 }
             </div>
-            <div className="flex flex-col 2xl:p-4 md:items-start items-center">
-                <div className="w-80 h-64 2xl:mb-0 mb-8">
+            <div className="">
+                <div className="w-80 2xl:mb-0 mb-8 flex flex-col 2xl:p-4 md:items-start items-center">
                     <img src={`${currentColor.img}`} alt={`Macbook Air with chip ${currentChipType.chip}`}
                         className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:mt-6 object-contain m-auto" />
                     <span className="2xl:text-lg xl:text-sm font-medium text-slate-700 mb-2 text-center md:text-left">
@@ -51,7 +51,7 @@ const Macbook = () => {
 
                         </button>
                     </div>
-                    <img src='images/apple-m2-icon.png' alt='Apple M2 Icon' className="w-12 h-12 2xl:mb-4 xl:mb-2" />
+                    <img src='images/apple-m2-icon.png' alt='Apple M2 Icon' className="w-12 h-12 2xl:mb-4 xl:mb-2 m-1" />
                     <div className='2xl:mb-4 xl:mb-2 text-center md:text-left'>
                         <p className='2xl:text-lg xl:text-base font-semibold text-slate-700 mb-0.5'>
                             8-core CPU
@@ -66,7 +66,7 @@ const Macbook = () => {
                             8-core CPU
                         </p>
                     </div>
-                    <button type='button' className='text-sm mt-4 md:mt-0 px-4 py-2 bg-violet-500 text-white rounded-full w-fit '>
+                    <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit '>
                         Buy Now
                     </button>
                 </div>
