@@ -11,6 +11,27 @@ import PageTransitions from './components/PageTransitions';
 function App() {
   const [isFrameZoom, setFrameZoom] = useState(false);
   const [activePage, setActivePage] = useState(0);
+  const [ isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const currentIsLargeScreen = window.innerWidth >= 1024;
+      setIsLargeScreen(currentIsLargeScreen);
+
+      if (!newIsLargeScreen) {
+        setFrameZoom(true); // Always zoomed in on smaller screens
+      } else {
+        setFrameZoom(false);
+      }
+    }
+
+    // **Crucial:** Call handleResize immediately to set initial state
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    // Cleanup function: remove the event listener when the component unmounts
+    return () => window.removeEventListener('resize', handleResize); 
+  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
 
   const toggleZoom = () => {
     setFrameZoom(!isFrameZoom);
