@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Controls from './components/Controls';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,14 +11,14 @@ import PageTransitions from './components/PageTransitions';
 function App() {
   const [isFrameZoom, setFrameZoom] = useState(false);
   const [activePage, setActivePage] = useState(0);
-  const [ isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
     const handleResize = () => {
       const currentIsLargeScreen = window.innerWidth >= 1024;
       setIsLargeScreen(currentIsLargeScreen);
 
-      if (!newIsLargeScreen) {
+      if (!currentIsLargeScreen) {
         setFrameZoom(true); // Always zoomed in on smaller screens
       } else {
         setFrameZoom(false);
@@ -34,7 +34,9 @@ function App() {
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
 
   const toggleZoom = () => {
-    setFrameZoom(!isFrameZoom);
+    if (isLargeScreen) {
+      setFrameZoom(!isFrameZoom);
+    }
   }
 
   const handleNavClick = (pageIndex) => {
