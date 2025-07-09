@@ -20,6 +20,10 @@ function App() {
     setActivePage(pageIndex);
   }
 
+  const resetHome = () => {
+    setActivePage(0);
+  }
+
   return (
     <>
       <div className='w-full h-screen grid place-items-center'>
@@ -27,10 +31,12 @@ function App() {
                       w-[70vw] h-[85vh] max-w-[97vw] max-h-[97vh] border border-gray-300 rounded-2xl 
                       resize overflow-auto relative transition-all duration-100 flex`}>
           <Navbar activePage={activePage} handleNavClick={handleNavClick} />
-          <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} />
+          <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} 
+                    resetHome={resetHome} activePage={activePage} 
+          />
           <div className='flex-grow'>
             <PageTransitions activePage={activePage} >
-              <Home />
+              <Home onNavigation={handleNavClick} />
               <IPhone />
               <Macbook />
               <Watch />
