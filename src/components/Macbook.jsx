@@ -3,6 +3,10 @@ import { macbookModels } from '../data/index';
 
 const Macbook = () => {
     const [selectedChip, setSelectedChip] = React.useState(0);
+    const [selectedColor, setSelectedColor] = React.useState(0);
+
+    const currentChipType = macbookModels[selectedChip];
+    const currentColor = currentChipType.colors[selectedColor];
 
     const handleChipSelection = (index) => {
         setSelectedChip(index);
@@ -30,11 +34,11 @@ const Macbook = () => {
                 }
             </div>
             <div className="flex flex-col 2xl:p-4 md:items-start items-center">
-                <div className="w-80 h-64 2xl:mb-0 -mb-8">
-                    <img src='images/macbook-air-gold-m2.jpg' alt='MacBook Air Gold'
-                        className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:-mt-6 object-contain m-auto" />
+                <div className="w-80 h-64 2xl:mb-0 mb-8">
+                    <img src={`${currentColor.img}`} alt={`Macbook Air with chip ${currentChipType.chip}`}
+                        className="2xl:w-72 xl:w-52 w-48 h-full 2xl:mt-0 sm:mt-6 object-contain m-auto" />
                     <span className="2xl:text-lg xl:text-sm font-medium text-slate-700 mb-2 text-center md:text-left">
-                        Gold
+                        {currentColor.label}
                     </span>
                     <div className='flex space-x-2 mb-4 md:text-left justify-center md:justify-start'>
                         <button className='2xl:w-6 sm:w-5 w-4 2xl:h-6 sm:h-5 h-4 bg-[#2e3641] rounded-full border hover:border-violet-500'>
