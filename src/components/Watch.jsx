@@ -3,8 +3,8 @@ import { watchModels } from '../data/index';
 
 const Watch = () => {
     return (
-        <div className='flex flex-col items-center justify-around bg-white h-full py-8 px-4'>
-            <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-700 mb-8'>
+        <div className='flex flex-col items-center justify-start bg-white h-full py-8 px-4'>
+            <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-700 my-8 cursor-default'>
                 Choose your new Apple watch.
             </h1>
             <div className='w-full flex justify-around'>
@@ -28,13 +28,13 @@ const Watch = () => {
                                     className='absolute w-full h-full object-contain
                                 opacity-0 group-hover:opacity-100 transition duration-300' /> */}
                             </div>
-                            <h3 className='2xl:text-xl xl:text-lg text-sm font-semibold'>
+                            <h3 className='2xl:text-xl xl:text-lg text-sm font-semibold cursor-default'>
                                 {watch.name}
                             </h3>
-                            <a href="#" className='my-2 text-base text-violet-500'>
+                            <a href="#" className='my-2 text-base text-violet-500 cursor-default'>
                                 {watch.price}
                             </a>
-                            <div className='md:text-sm text-xs text-slate-700 my-2'>
+                            <div className='md:text-sm text-xs text-slate-700 my-2 cursor-default'>
                                 {
                                     watch.desc.map((spec, index) => (
                                         <p key={spec} className=''>

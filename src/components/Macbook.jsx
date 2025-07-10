@@ -14,8 +14,8 @@ const Macbook = () => {
     }
 
     return (
-        <div className='flex flex-col items-center justify-around bg-white p-8 h-full'>
-            <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-700 mb-8'>
+        <div className='flex flex-col items-center justify-start bg-white p-8 h-full overflow-auto'>
+            <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-700 mb-6 3xl:mb-8 cursor-default'>
                 Choose your new macBook Air.
             </h1>
             <div className='flex'>
@@ -57,13 +57,13 @@ const Macbook = () => {
                     <div className='2xl:mb-4 xl:mb-2 text-center md:text-left'>
                         {
                             currentChipType?.specs.map((spec, index) => (
-                                <p key={index} className='2xl:text-lg xl:text-base font-semibold text-slate-700 mb-0.5'>
+                                <p key={index} className='2xl:text-lg xl:text-base font-semibold text-slate-700 mb-0.5 cursor-default'>
                                     {spec}
                                 </p>
                             ))
                         }
                     </div>
-                    <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit'>
+                    <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit cursor-pointer'>
                         Buy Now
                     </button>
                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Controls = ({ toggleZoom, isFrameZoom, resetHome, activePage }) => {
   return (
-    <div className='absolute top-3 right-3 space-x-2 z-10'>
+    <div className='absolute top-3 right-3 mr-2 space-x-2 z-10'>
         <button className='text-2xl text-violet-500 cursor-pointer hidden lg:inline-block' onClick={toggleZoom}>
             <i className={isFrameZoom ? 'bx bxs-zoom-out' : 'bx bxs-zoom-in'}></i>
         </button>

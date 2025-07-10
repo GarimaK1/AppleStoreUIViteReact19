@@ -46,7 +46,7 @@ const IMac = () => {
                         </div>
                     ))
                 }
-                <button type='button' className='text-sm mt-4 px-2 py-1 bg-violet-500 text-white rounded-full'>
+                <button type='button' className='text-sm mt-4 px-2 py-1 bg-violet-500 text-white rounded-full cursor-pointer'>
                     Buy Now
                 </button>
             </div>
