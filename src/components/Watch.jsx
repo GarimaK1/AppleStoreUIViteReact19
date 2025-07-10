@@ -10,7 +10,7 @@ const Watch = () => {
             <div className='w-full flex justify-around'>
                 {
                     watchModels.map((watch, index) => (
-                        <div key={watch.name} className='w-60 h-[450px] flex flex-col justify-around'>
+                        <div key={watch.name} className='max-w-60 h-[450px] flex flex-col justify-around'>
                             <div className='w-full h-64 mb-4 overflow-hidden relative group'>
                                 {
                                     watch.imgs.map((img, ind) => (
@@ -43,7 +43,7 @@ const Watch = () => {
                                     ))
                                 }
                             </div>
-                            <button type='button' className='text-sm my-4 px-4 py-2 bg-violet-500 text-white rounded-full w-fit cursor-pointer'>
+                            <button type='button' className='text-sm my-4 px-2 py-1 md:px-4 md:py-2 bg-violet-500 text-white rounded-full w-fit cursor-pointer'>
                                 Buy Now
                             </button>
                         </div>
