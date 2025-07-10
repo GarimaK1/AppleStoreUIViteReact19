@@ -3,15 +3,15 @@ import { watchModels } from '../data/index';
 
 const Watch = () => {
     return (
-        <div className='flex flex-col items-center justify-start bg-white h-full py-8 px-4'>
+        <div className='flex flex-col items-center justify-start bg-white h-full py-8 px-4 overflow-auto'>
             <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-slate-700 my-8 cursor-default'>
                 Choose your new Apple watch.
             </h1>
-            <div className='w-full flex justify-around'>
+            <div className='w-full flex justify-around flex-wrap md:flex-nowrap'>
                 {
                     watchModels.map((watch, index) => (
-                        <div key={watch.name} className='max-w-60 h-[450px] flex flex-col justify-around'>
-                            <div className='w-full h-64 mb-4 overflow-hidden relative group'>
+                        <div key={watch.name} className='w-60 h-[450px] flex flex-col justify-around items-center md:items-start'>
+                            <div className='w-2/3 h-2/3 md:w-full md:h-64 md:mb-4 overflow-hidden relative group'>
                                 {
                                     watch.imgs.map((img, ind) => (
                                         <img key={img} src={img} alt={watch.name}
