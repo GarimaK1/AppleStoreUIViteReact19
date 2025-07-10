@@ -12,6 +12,7 @@ function App() {
   const [isFrameZoom, setFrameZoom] = useState(false);
   const [activePage, setActivePage] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,13 +48,20 @@ function App() {
     setActivePage(0);
   }
 
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  }
+
   return (
     <>
       <div className='w-full h-screen grid place-items-center'>
         <div className={`${isFrameZoom ? 'min-w-[97vw] min-h-[97vh]' : 'min-w-[70vw] min-h-[85vh]'} 
                       w-[70vw] h-[85vh] max-w-[97vw] max-h-[97vh] border border-gray-300 rounded-2xl 
-                      resize overflow-auto relative transition-all duration-100 flex`}>
-          <Navbar activePage={activePage} handleNavClick={handleNavClick} />
+                      resize overflow-auto transition-all duration-100 flex relative`}>
+          <Navbar 
+            activePage={activePage} handleNavClick={handleNavClick} 
+            isNavbarOpen={isNavbarOpen} toggleNavbar={toggleNavbar} 
+          />
           <Controls isFrameZoom={isFrameZoom} toggleZoom={toggleZoom} 
                     resetHome={resetHome} activePage={activePage} 
           />
