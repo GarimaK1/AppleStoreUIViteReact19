@@ -8,5 +8,3 @@ Image Attributions:
 Transition image: From Mateus Andre on Freepik
 
 Watch image: Photo by pratik prasad on Unsplash
-
-      
