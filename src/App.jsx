@@ -26,7 +26,7 @@ function App() {
       }
     }
 
-    // **Crucial:** Call handleResize immediately to set initial state
+    // Important: Call handleResize immediately to set initial state
     handleResize();
 
     window.addEventListener('resize', handleResize);
