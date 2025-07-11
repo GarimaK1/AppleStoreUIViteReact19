@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/AppleStoreUIViteReact19/",
+  base: "/AppleStoreWithViteReact19/"
 })
