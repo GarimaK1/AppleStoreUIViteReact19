@@ -46,7 +46,7 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 - Transition image: Mateus Andre on Freepik
 - Watch image: Photo by Pratik Prasad on Unsplash
 
-## Demo:  
+## Demo
 Visit Live Site: [Click here to be taken to the web app](https://garimak1.github.io/AppleStoreWithViteReact19/)
 
 ## Screenshots
