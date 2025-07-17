@@ -57,8 +57,3 @@ Visit Live Site: [Click here to be taken to the web app](https://garimak1.github
 ![Watch Selection](public/images/MockAppleStoreWatch.png)
 ![iMac Selection](public/images/MockAppleStoreIMac.png)
 ![Navbar Small Screen](public/images/MockAppleStoreNavbarSmall.png)
-![Home Page Small Screen](public/images/MockAppleStoreHomeSmall.png)
-![iPhone Small Screen](public/images/MockAppleStoreIPhoneSmall.png)
-![MacBook Small Screen](public/images/MockAppleStoreMacbookAirSmall.png)
-![Watch Small Screen](public/images/MockAppleStoreWatchSmall.png)
-![iMac Small Screen](public/images/MockAppleStoreIMacSmall.png)
