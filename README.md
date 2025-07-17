@@ -12,14 +12,6 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 - **Dynamic Data Rendering:** Product data is managed in a single file for easy updates.
 - **Modular Components:** Clean, maintainable codebase with reusable components.
 
-## Screenshots
-
-![Home Page](public/images/screenshot-home.png)
-![iPhone Selection](public/images/screenshot-iphone.png)
-![MacBook Selection](public/images/screenshot-macbook.png)
-![Watch Selection](public/images/screenshot-watch.png)
-![iMac Selection](public/images/screenshot-imac.png)
-
 ## Getting Started
 
 1. **Clone the repository:**
@@ -54,10 +46,19 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 - Transition image: Mateus Andre on Freepik
 - Watch image: Photo by Pratik Prasad on Unsplash
 
----
-
-**Demo:**  
+## Demo:  
 Visit Live Site: [Click here to be taken to the web app](https://garimak1.github.io/AppleStoreWithViteReact19/)
 
----
+## Screenshots
 
+![Home Page](public/images/MockAppleStoreHome.png)
+![iPhone Selection](public/images/MockAppleStoreIPhone.png)
+![MacBook Selection](public/images/MockAppleStoreMacbookAir.png)
+![Watch Selection](public/images/MockAppleStoreWatch.png)
+![iMac Selection](public/images/MockAppleStoreIMac.png)
+![Navbar Small Screen](public/images/MockAppleStoreNavbarSmall.png)
+![Home Page Small Screen](public/images/MockAppleStoreHomeSmall.png)
+![iPhone Small Screen](public/images/MockAppleStoreIPhoneSmall.png)
+![MacBook Small Screen](public/images/MockAppleStoreMacbookAirSmall.png)
+![Watch Small Screen](public/images/MockAppleStoreWatchSmall.png)
+![iMac Small Screen](public/images/MockAppleStoreIMacSmall.png)
