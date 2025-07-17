@@ -50,7 +50,17 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 Visit Live Site: [Click here to be taken to the web app](https://garimak1.github.io/AppleStoreWithViteReact19/)
 
 ## Screenshots
-
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreHome.png" alt="Home" width="250" height="300">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreIPhone.png" alt="IPhone" width="250" height="300">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreMacbookAir.png" alt="Macbook Air" width="250" height="300">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreWatch.png" alt="Watch" width="250" height="300">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreIMac.png" alt="IMac" width="250" height="300">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreNavbarSmall.png" alt="Navbar Small Screen" width="150" height="200">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreHomeSmall.png" alt="Home Small Screen" width="150" height="200">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreIPhoneSmall.png" alt="IPhone Small Screen" width="150" height="200">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreMacbookAirSmall.png" alt="Macbook Air Small Screen" width="150" height="200">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreWatchSmall.png" alt="Watch Small Screen" width="150" height="200">
+<img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreIMacSmall.png" alt="IMac Small Screen" width="150" height="200">
 ![Home Page](public/images/MockAppleStoreHome.png)
 ![iPhone Selection](public/images/MockAppleStoreIPhone.png)
 ![MacBook Selection](public/images/MockAppleStoreMacbookAir.png)
