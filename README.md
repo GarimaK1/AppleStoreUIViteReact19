@@ -2,11 +2,11 @@
 
 Mock Apple Store UI
 
-A modern, responsive UI for a mock Apple Store, built with Vite 7 and React 19.
+A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 
 ## Features
 
-- **Animated Page Transitions:** Smooth transitions between pages using custom React hooks and CSS.
+- **Animated Page Transitions:** Smooth transitions between pages using React hooks and TailwindCSS.
 - **Responsive Design:** Works seamlessly on desktop and mobile devices.
 - **Interactive Navigation:** Easily switch between Home, iPhone, MacBook, Watch, and iMac pages.
 - **Dynamic Data Rendering:** Product data is managed in a single file for easy updates.
@@ -45,9 +45,9 @@ A modern, responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 
 ## Technologies Used
 
-- [React 19](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- React 19
+- Vite 7
+- Tailwind CSS 4
 
 ## Credits
 
@@ -57,7 +57,7 @@ A modern, responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 ---
 
 **Demo:**  
-[Live Site](https://garimak1.github.io/AppleStoreWithViteReact19/)
+Visit Live Site: [Click here to be taken to the web app](https://garimak1.github.io/AppleStoreWithViteReact19/)
 
 ---
 
