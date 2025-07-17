@@ -8,12 +8,13 @@ const PageTransitions = ({ activePage, children }) => {
         if (currentPage !== activePage) {
             // setCurrentPage(activePage);
             setIsTransitioning(true);
-            setTimeout(() => {
+            const timer = setTimeout(() => {
                 setCurrentPage(activePage);
                 setIsTransitioning(false);
             }, 300); // 300 to match the transition time
+            return () => clearTimeout(timer);
         }
-    }, [activePage, currentPage]);
+    }, [activePage]);
 
     return (
         <div className='w-full h-full overflow-hidden relative bg-cover bg-no-repeat transform-3d'
