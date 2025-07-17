@@ -61,9 +61,4 @@ Visit Live Site: [Click here to be taken to the web app](https://garimak1.github
 <img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreMacbookAirSmall.png" alt="Macbook Air Small Screen" width="150" height="200">
 <img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreWatchSmall.png" alt="Watch Small Screen" width="150" height="200">
 <img src="https://github.com/GarimaK1/AppleStoreWithViteReact19/blob/main/public/images/MockAppleStoreIMacSmall.png" alt="IMac Small Screen" width="150" height="200">
-![Home Page](public/images/MockAppleStoreHome.png)
-![iPhone Selection](public/images/MockAppleStoreIPhone.png)
-![MacBook Selection](public/images/MockAppleStoreMacbookAir.png)
-![Watch Selection](public/images/MockAppleStoreWatch.png)
-![iMac Selection](public/images/MockAppleStoreIMac.png)
-![Navbar Small Screen](public/images/MockAppleStoreNavbarSmall.png)
+
