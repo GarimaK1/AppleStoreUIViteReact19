@@ -40,7 +40,7 @@ const Navbar = ({ activePage, handleNavClick, isNavbarOpen, toggleNavbar }) => {
       <button className='fixed md:hidden top-12 left-6 p-2 text-indigo-700 cursor-pointer z-10'
               onClick={toggleNavbar} >
                 {
-                  isNavbarOpen ? <i class='bx bx-x bx-md'></i> : <i class="bx bx-menu bx-md"></i>
+                  isNavbarOpen ? <i className='bx bx-x bx-md'></i> : <i className="bx bx-menu bx-md"></i>
                 }
       </button>
     </>

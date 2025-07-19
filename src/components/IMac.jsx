@@ -27,7 +27,7 @@ const IMac = () => {
             <div className='absolute md:top-1/2 top-3/4 md:left-4 left-12 
                         transform -translate-y-1/2 flex flex-col lg:space-y-2 space-y-1 bg-slate-50'>
                 {
-                    imacModels.map((model, index) => (
+                    imacModels.map((model) => (
                         <div key={model.label} className='flex items-center space-x-2'>
                             <button style={{ backgroundColor: model.bg }} 
                                     className={`2xl:w-8 2xl:h-8 md:w-5 md:h-5 w-4 h-4 rounded-full 

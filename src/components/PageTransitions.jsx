@@ -5,16 +5,21 @@ const PageTransitions = ({ activePage, children }) => {
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
     useEffect(() => {
+        console.log(`Current Page: ${currentPage}, Active Page: ${activePage}`);
         if (currentPage !== activePage) {
             // setCurrentPage(activePage);
             setIsTransitioning(true);
             const timer = setTimeout(() => {
                 setCurrentPage(activePage);
                 setIsTransitioning(false);
+                console.log(`Current Page: ${currentPage}, Active Page: ${activePage}`);
             }, 300); // 300 to match the transition time
-            return () => clearTimeout(timer);
+            return () => {
+                console.log('cleanup timer');
+                return clearTimeout(timer);
+            };
         }
-    }, [activePage]);
+    }, [activePage, currentPage]);
 
     return (
         <div className='w-full h-full overflow-hidden relative bg-cover bg-no-repeat transform-3d'
@@ -24,7 +29,7 @@ const PageTransitions = ({ activePage, children }) => {
                     `}>
                 {
                     // ${isTransitioning ? '-translate-x-full' : 'translate-x-0'}
-                    children[currentPage]
+                    children[activePage]
                 }
             </div>
         </div>

@@ -9,7 +9,7 @@ const Watch = () => {
             </h1>
             <div className='w-full flex justify-around flex-wrap md:flex-nowrap'>
                 {
-                    watchModels.map((watch, index) => (
+                    watchModels.map((watch) => (
                         <div key={watch.name} className='w-60 h-[450px] flex flex-col justify-around items-center md:items-start'>
                             <div className='w-2/3 h-2/3 md:w-full md:h-64 md:mb-4 overflow-hidden relative group'>
                                 {
@@ -36,7 +36,7 @@ const Watch = () => {
                             </a>
                             <div className='md:text-sm text-xs text-slate-700 my-2 cursor-default'>
                                 {
-                                    watch.desc.map((spec, index) => (
+                                    watch.desc.map((spec) => (
                                         <p key={spec} className=''>
                                             {spec}
                                         </p>
