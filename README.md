@@ -10,7 +10,12 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
 - **Responsive Design:** Works seamlessly on desktop and mobile devices.
 - **Interactive Navigation:** Easily switch between Home, iPhone, MacBook, Watch, and iMac pages.
 - **Dynamic Data Rendering:** Product data is managed in a single file for easy updates.
-- **Modular Components:** Clean, maintainable codebase with reusable components.
+
+## Tech Stack
+
+- React 19
+- Vite 7
+- Tailwind CSS 4
 
 ## Getting Started
 
@@ -34,12 +39,6 @@ A responsive UI for a mock Apple Store, built with Vite 7 and React 19.
    ```sh
    npm run build
    ```
-
-## Technologies Used
-
-- React 19
-- Vite 7
-- Tailwind CSS 4
 
 ## Credits
 
